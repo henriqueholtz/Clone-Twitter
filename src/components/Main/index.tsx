@@ -5,13 +5,14 @@ import {
   Header,
   BackIcon,
   ProfileInfo,
-  ProfilePage,
   BottomMenu,
   HomeIcon,
   SearchIcon,
   BellIcon,
   EmailIcon,
 } from './styles';
+
+import ProfilePage from '../ProfilePage';
 
 const Main: React.FC = () => {
   return (
@@ -30,7 +31,7 @@ const Main: React.FC = () => {
       <ProfilePage />
 
       <BottomMenu>
-        <HomeIcon />
+        <HomeIcon className="active" />
         <SearchIcon />
         <BellIcon />
         <EmailIcon />
